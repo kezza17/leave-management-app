@@ -1,7 +1,10 @@
 import React from 'react'
 
+import './LeaveForm.css'
+
 const leaveForm = (props) => {
 
+  // EVENT LISTENER FOR SELECT FIELD DROPDOWN
   const selector = () => {
     document.querySelector('.custom-select').classList.toggle('open');
     document.querySelector('.custom-select-trigger').classList.toggle('open');
@@ -16,8 +19,8 @@ const leaveForm = (props) => {
     }
   }
 
+  // CHANGE FORM STYLING IF FORM INVALID
   let errorMessage
-
   const formChecker = () => {
     const inputs = document.querySelectorAll('.form-input')
     const labels = document.querySelectorAll('.form-label')
@@ -45,6 +48,7 @@ const leaveForm = (props) => {
       <p className='heading-1'>Apply for Leave</p>
       <form onSubmit={props.leaveRequestSubmitHandler} noValidate>
         {errorMessage}
+        {/* FIRST NAME */}
         <div className='input-container'>
           <label className='form-label' htmlFor='first_name'>First Name</label>
           <input 
@@ -52,6 +56,7 @@ const leaveForm = (props) => {
             id='first_name' name='first_name' type='text' required 
             onChange={props.formInputHandler} />
         </div>
+        {/* lAST NAME */}
         <div className='input-container'>
           <label className='form-label' htmlFor='last_name'>Last Name</label>
           <input 
@@ -60,6 +65,7 @@ const leaveForm = (props) => {
             onChange={props.formInputHandler} />
         </div>
         <div className='date-container'>
+          {/* START DATE */}
           <div className='input-container ml-0'>
             <label className='form-label' htmlFor='leave_start'>Leave Start Date</label>
             <input 
@@ -67,6 +73,7 @@ const leaveForm = (props) => {
               id='leave_start' name='leave_start' type='date' required 
               onChange={props.formInputHandler} />
           </div>
+          {/* END DATE */}
           <div className='input-container mr-0'>
             <label className='form-label' htmlFor='leave_end'>Leave End Date</label>
             <input 
@@ -75,6 +82,7 @@ const leaveForm = (props) => {
               onChange={props.formInputHandler} />
           </div>
         </div>
+        {/* SELECT TYPE OF LEAVE */}
         <div className='input-container'>
           <label className='form-label' htmlFor='leave_type'>Type of Leave</label>
           <div className="custom-select-wrapper" onClick={() => selector()}>
@@ -112,6 +120,7 @@ const leaveForm = (props) => {
               </div>
           </div>          
         </div>
+        {/* REASON FOR LEAVE */}
         <div className='input-container '>
           <label className='form-label' htmlFor='leave_reason'>Reason for Leave</label>
           <textarea 
@@ -119,6 +128,7 @@ const leaveForm = (props) => {
             id='leave_reason' name='leave_reason' rows='4' required 
             onChange={props.formInputHandler} />
         </div>
+        {/* DAYS OF LEAVE TAKEN */}
         <div className='day-container'>
           <label className='form-label'>Number of leave days taken:</label>
           <p className='days-left'>{props.leaveDays}</p>

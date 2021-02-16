@@ -1,6 +1,8 @@
 import React from 'react'
 
 const loginForm = (props) => {
+
+  // CHANGE STYLING IF FORM IS INVALID
   let errorMessage
 
   const inputs = document.querySelectorAll('.login-input')
@@ -28,10 +30,12 @@ const loginForm = (props) => {
       <p className='heading-1'>Login</p>
       <form onSubmit={props.loginSubmitHandler} noValidate>
         {errorMessage}
+        {/* EMAIL */}
         <div className='input-container'>
           <label className='form-label login-label' htmlFor='email_address'>Email Address</label>
           <input className='login-input form-input' id='email_address' name='email_address' type='email' onChange={props.formInputHandler} />
         </div>
+        {/* PASSWORD */}
         <div className='input-container'>
           <label className='form-label login-label' htmlFor='password'>Password</label>
           <input className='login-input form-input' id='password' name='password' type='password' onChange={props.formInputHandler} />

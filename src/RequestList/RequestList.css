@@ -1,0 +1,38 @@
+.request-container {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+/* TABLE FOR LEAVE REQUESTS */
+
+.request-table {
+  max-width: 1080px;
+  margin: auto;
+  text-align: center;
+  background-color: transparent;
+}
+
+.table-headings {
+  text-transform: uppercase;
+  font-size: 11px;
+  color: #A6ADB4;
+  font-weight: normal;
+  text-align: left;
+}
+
+.table-row {
+  min-height: 56px;
+  background-color: #FFFFFF;
+  padding: 10px;
+  margin: 5px auto;
+}
+
+.table-value {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  text-transform: capitalize;
+  text-align: left;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  color: #202124;
+}

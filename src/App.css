@@ -9,15 +9,6 @@
   padding-top: 50px
 }
 
-.form-container {
-  background-color: transparent;
-  text-align: center;
-  margin: auto;
-  border-radius: 6px;
-  padding-top: 30px;
-  padding-bottom: 30px
-}
-
 .heading-1 {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
@@ -26,6 +17,18 @@
   letter-spacing: 0;
   line-height: 48px;
   text-transform: capitalize;
+  text-align: center;
+}
+
+/* DEFAULT FORM STYLING */
+
+.form-container {
+  background-color: transparent;
+  text-align: center;
+  margin: auto;
+  border-radius: 6px;
+  padding-top: 30px;
+  padding-bottom: 30px
 }
 
 .input-container {
@@ -71,6 +74,8 @@
   opacity: 1;
 }
 
+/* FORM INVALID */
+
 .form-invalid {
   border: 2px solid #FF4D4D;
 }
@@ -88,6 +93,8 @@
   opacity: 1;
   margin: auto;
 }
+
+/* BUTTONS */
 
 .primary-button {
   height: 40px;
@@ -122,139 +129,10 @@
   text-transform: uppercase;
 }
 
-.form-date {
-  width: 170px
-}
+/* BUTTON GROUP */
 
-.date-container {
-  max-width: 380px;
-  margin: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-}
-
-/* CUSTOM SELECT DROPDOWN */
-
-.custom-select-wrapper {
-  position: relative;
-  user-select: none; 
-}
-
-.custom-select {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  width: 360px !important;
-  height: 40px !important;
-  background: #FFFFFF 0% 0% no-repeat padding-box;
-  border: none !important;
-  border-radius: 6px !important;
-  opacity: 1;
-  text-align: left;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  letter-spacing: 0px;
-  color: #202124;
-  opacity: 1;
-  text-indent: 10px;
-  padding: 0 !important;
-}
-
-.custom-select-trigger {
-  position: relative;
-  width: 360px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
-  font-size: 13px;
-  font-weight: bold;
-  color: #202124;
-  height: 40px;
-  line-height: 40px;
-  background: #ffffff00;
-  cursor: pointer;
-  border-width: 2px;
-  border-style: solid;
-  border-color: #EBEDED;
-  border-radius: 6px;
-}
-
-.custom-select-trigger.open {
-  border-color: #72ACFF;
-  border-width: 2px 2px 0 2px;
-  border-radius: 6px 6px 0 0;
-}
-
-.custom-options {
-  position: absolute;
-  display: block;
-  top: 100%;
-  left: 0;
-  right: 0;
-  border: 2px solid #72ACFF;
-  border-top: 0;
-  border-radius: 0 0 6px 6px;
-  background: #ffffff;
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-  z-index: 2;
-}
-.custom-select.open .custom-options {
-  opacity: 1;
-  visibility: visible;
-  pointer-events: all;
-  border-color: #72ACFF;
-}
-.custom-option {
-  position: relative;
-  display: block;
-  padding: 0 10px 0 10px;
-  font-size: 13px;
-  font-weight: bold;
-  color: #202124;
-  line-height: 40px;
-  cursor: pointer;
-}
-.custom-option:hover {
-  cursor: pointer;
-  background-color: #F6F8F9;
-}
-.custom-option.selected {
-  color: #72ACFF;
-  background-color: #F6F8F9;
-}
-
-.arrow {
-  position: relative;
-  height: 15px;
-  width: 15px;
-  z-index: 10 !important;
-}
-
-.text-area-input {
-  height: 100%
-}
-
-.day-container {
-  width: 380px;
-  display: flex;
-  flex-direction: row;
-  margin: auto;
-  text-align: left;
-  padding: 0px 10px 20px 10px;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-}
-
-.days-left {
-  color:#FA6980;
-  padding-left: 10px;
-  font-weight: bold;
-  font-size: 15px;
+.button-group  {
+  text-align: center;
 }
 
 .button-left {
@@ -263,43 +141,4 @@
 
 .button-right {
   border-radius: 0 6px 6px 0 ;
-}
-
-/* TABLE FOR LEAVE REQUESTS */
-
-.request-table {
-  max-width: 1080px;
-  margin: auto;
-  text-align: center;
-  background-color: transparent;
-}
-
-.table-headings {
-  text-transform: uppercase;
-  font-size: 11px;
-  color: #A6ADB4;
-  font-weight: normal;
-  text-align: left;
-}
-
-.table-row {
-  min-height: 56px;
-  background-color: #FFFFFF;
-  padding: 10px;
-  margin: 5px auto;
-}
-
-.table-value {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 13px;
-  text-transform: capitalize;
-  text-align: left;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  color: #202124;
-}
-
-.request-container {
-  padding-top: 30px;
-  padding-bottom: 30px;
 }

@@ -1,9 +1,11 @@
 import React from 'react'
 
 import { existingRequests } from '../mockValues'
+import './RequestList.css'
 
 const requestList = (props) => {
 
+  // DISPLAY OF ALL THE EXISTING LEAVE REQUESTS
   const list = existingRequests.map( (item, i) => {
     return (
       <div className='row table-row' key={i}>
@@ -17,10 +19,10 @@ const requestList = (props) => {
     )
   })
 
-  let newRequests
-
+  // DISPLAY THE NEWLY SUBMITTED LEAVE REQUEST
+  let newRequest
   if (props.leaveRequestForm !== null) {
-    newRequests = (
+    newRequest = (
       <div className='row table-row'>
         <div className='col-2 table-value'>{props.leaveRequestForm.first_name} {props.leaveRequestForm.last_name}</div>
         <div className='col-2 table-value'>{props.leaveRequestForm.leave_start}</div>
@@ -46,7 +48,7 @@ const requestList = (props) => {
         </div>
         <div>
           {list}
-          {newRequests}
+          {newRequest}
         </div>
       </div>
     </div>
