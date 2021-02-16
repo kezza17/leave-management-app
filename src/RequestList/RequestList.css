@@ -36,3 +36,7 @@
   padding-bottom: 10px;
   color: #202124;
 }
+
+.table-reason {
+  text-transform: none;
+}

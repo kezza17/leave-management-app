@@ -13,7 +13,7 @@ const requestList = (props) => {
         <div className='col-2 table-value'>{item['leave_start']}</div>
         <div className='col-2 table-value'>{item['leave_end']}</div>
         <div className='col-2 table-value'>{item['leave_type']}</div>
-        <div className='col-3 table-value'>{item['leave_reason']}</div>
+        <div className='col-3 table-value table-reason'>{item['leave_reason']}</div>
         <div className='col-1 table-value text-center'>{item['leave_taken']}</div>
       </div>
     )
@@ -28,7 +28,7 @@ const requestList = (props) => {
         <div className='col-2 table-value'>{props.leaveRequestForm.leave_start}</div>
         <div className='col-2 table-value'>{props.leaveRequestForm.leave_end}</div>
         <div className='col-2 table-value'>{props.leaveRequestForm.leave_type}</div>
-        <div className='col-3 table-value'>{props.leaveRequestForm.leave_reason}</div>
+        <div className='col-3 table-value table-reason'>{props.leaveRequestForm.leave_reason}</div>
         <div className='col-1 table-value text-center'>{props.leaveRequestForm.leave_taken}</div>
       </div>
     )
