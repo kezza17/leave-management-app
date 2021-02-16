@@ -14,5 +14,5 @@ This app uses a version of node 12.18.0 and above
 
 These are found under mockvalues.js and you can use:
  
-email: bob@gamil.com
+email: bob@gmail.com
 password: 123456
