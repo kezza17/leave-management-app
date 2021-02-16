@@ -21,7 +21,7 @@ const requestList = (props) => {
 
   // DISPLAY THE NEWLY SUBMITTED LEAVE REQUEST
   let newRequest
-  if (props.leaveRequestForm !== null) {
+  if (props.leaveRequestForm !== null && props.formValid) {
     newRequest = (
       <div className='row table-row'>
         <div className='col-2 table-value'>{props.leaveRequestForm.first_name} {props.leaveRequestForm.last_name}</div>

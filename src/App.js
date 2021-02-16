@@ -132,7 +132,8 @@ class App extends Component {
                   leaveRequestSubmitHandler={this.leaveRequestSubmitHandler}
                   formValid={this.state.formValid} />
                 : <RequestList
-                  leaveRequestForm={this.state.leaveRequestForm} />
+                  leaveRequestForm={this.state.leaveRequestForm}
+                  formValid={this.state.formValid} />
               }
             </div>
           }

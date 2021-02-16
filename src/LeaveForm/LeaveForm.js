@@ -88,7 +88,7 @@ const leaveForm = (props) => {
           <div className="custom-select-wrapper" onClick={() => selector()}>
               <div className="custom-select">
                   <div className="custom-select-trigger">
-                      <span>Select...</span>
+                      <span>Annual</span>
                       <div className="arrow"></div>
                   </div>
                   <div className="custom-options">
